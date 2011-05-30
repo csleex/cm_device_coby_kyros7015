@@ -32,7 +32,6 @@ adb pull /system/lib/hw/gralloc.tcc92xx.so ../../../vendor/$MANUFACTURER/$DEVICE
 adb pull /system/lib/hw/lights.tcc92xx.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/lights.tcc92xx.so
 adb pull /system/lib/hw/overlay.tcc92xx.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/overlay.tcc92xx.so
 adb pull /system/lib/hw/sensors.tcc92xx.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/sensors.tcc92xx.so
-adb pull /system/lib/hw/serial.tcc92xx.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/serial.tcc92xx.so
 adb pull /system/lib/libMali.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libMali.so
 adb pull /system/lib/libasound.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libasound.so
 adb pull /system/lib/libaudio.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libaudio.so
@@ -43,7 +42,6 @@ adb pull /system/lib/modules/ump.ko ../../../vendor/$MANUFACTURER/$DEVICE/propri
 adb pull /system/usr/keylayout/telechips_keypad.kl ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/telechips_keypad.kl
 adb pull /system/usr/keylayout/telechips_remote_controller.kl ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/telechips_remote_controller.kl
 adb pull /system/wifi/ar6000.ko ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/ar6000.ko
-adb pull /system/wifi/athtcmd_ram.bin ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/athtcmd_ram.bin
 adb pull /system/wifi/athwlan.bin.z77 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/athwlan.bin.z77
 adb pull /system/wifi/calData_ar6102_15dBm.bin ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/calData_ar6102_15dBm.bin
 adb pull /system/wifi/data.patch.hw2_0.bin ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/data.patch.hw2_0.bin
@@ -102,7 +100,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/lights.tcc92xx.so:system/lib/hw/lights.tcc92xx.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/overlay.tcc92xx.so:system/lib/hw/overlay.tcc92xx.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sensors.tcc92xx.so:system/lib/hw/sensors.tcc92xx.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/serial.tcc92xx.so:system/lib/hw/serial.tcc92xx.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libMali.so:system/lib/libMali.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libasound.so:system/lib/libasound.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libaudio.so:system/lib/libaudio.so \\
@@ -113,7 +110,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/telechips_keypad.kl:system/usr/keylayout/telechips_keypad.kl \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/telechips_remote_controller.kl:system/usr/keylayout/telechips_remote_controller.kl \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/ar6000.ko:system/wifi/ar6000.ko \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/athtcmd_ram.bin:system/wifi/athtcmd_ram.bin \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/athwlan.bin.z77:system/wifi/athwlan.bin.z77 \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/calData_ar6102_15dBm.bin:system/wifi/calData_ar6102_15dBm.bin \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/data.patch.hw2_0.bin:system/wifi/data.patch.hw2_0.bin \\
