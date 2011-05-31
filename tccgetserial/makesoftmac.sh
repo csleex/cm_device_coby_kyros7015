@@ -1,7 +1,8 @@
 #!/system/bin/sh
 
-if [ ! -f /system/etc/softmac ]; then
+if [ ! -f /system/wifi/softmac ]; then
 	mount -o remount,rw /system
-	tccgetserial -w > /system/etc/softmac
+	tccgetserial -w > /system/wifi/softmac
 	mount -o remount,ro /system
+	ln -fs /system/wifi/softmac /data/softmac
 fi

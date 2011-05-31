@@ -406,8 +406,6 @@ on boot
     chown system system /dev/vpu
     chmod 0666 /dev/vpu
 
-    symlink /system/etc/softmac /data/softmac
-
 # Include extra init file
     import /system/etc/init.local.rc
 
